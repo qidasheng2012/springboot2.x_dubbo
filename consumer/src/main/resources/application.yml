@@ -1,0 +1,16 @@
+# 端口
+server:
+  port: 8080
+spring:
+  application:
+    name: user-con
+
+dubbo:
+  application:
+    name: user-consumer
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  #scan: com.springboot.service.impl
