@@ -16,9 +16,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserById(Integer id) {
         User user = User.builder()
-                .id(1)
+                .id(id)
                 .name("张三")
-                .age(23)
+                .age(20 + id)
                 .build();
 
         return user;

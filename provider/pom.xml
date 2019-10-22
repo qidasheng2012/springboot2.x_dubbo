@@ -3,19 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>springboot2.x_dubbo</artifactId>
+        <groupId>com.springboot</groupId>
+        <version>1.0.0</version>
+    </parent>
 
     <groupId>com.springboot</groupId>
     <artifactId>provider</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>provider</name>
     <description>生产者</description>
 
-    <parent>
-        <artifactId>springboot_dubbo</artifactId>
-        <groupId>com.springboot</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
 
     <dependencies>
         <!-- SpringBoot快速启动Duubbo -->
@@ -50,7 +47,7 @@
         <dependency>
             <groupId>com.springboot</groupId>
             <artifactId>common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
